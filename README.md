@@ -35,8 +35,8 @@ This project demonstrates my skills in **API testing** using **Postman**. I test
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/postman-api-testing-project.git
-cd postman-api-testing-project
+git clone https://github.com/daniyalfarman/Postman-API-Testing-Demo.git
+cd postman-api-testing-demo
 ```
 
 ### **2. Install Dependencies**
@@ -48,10 +48,15 @@ npm install -g newman newman-reporter-htmlextra
 ### **3. Run the Collection**
 Run the Postman collection using Newman:
 ```bash
+newman run postman-api-testing-demo/postman_api_testing_demo.json -e postman-api-testing-demo/postman_api_testing_env.json
+```
+### **4. Create HTML Report**
+Run the Postman collection using Newman:
+```bash
 newman run postman-api-testing-demo/postman_api_testing_demo.json -e postman-api-testing-demo/postman_api_testing_env.json -r htmlextra
 ```
 
-### **4. View the Report**
+### **5. View the Report**
 After running the tests, an HTML report will be generated in the `newman` folder. Open it in your browser:
 ```bash
 open newman/ `nameofhtmlfile`
@@ -62,12 +67,13 @@ Here are some screenshots of the project:
 
 ### **1. Postman Collection**
 ![Picture](postman_tests.png)
+![Picture](postman_passed_tests.png)
 
 ### **2. Newman CLI Output**
-
+![Picture](newman.png)
 
 ### **3. HTML Report**
-
+![Picture](htmlextra.png)
 
 ---
 
