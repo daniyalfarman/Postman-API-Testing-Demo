@@ -19,7 +19,7 @@ This project demonstrates my skills in **API testing** using **Postman**. I test
    - Used **Postman tests** to ensure API responses are correct.
 
 2. **Environment Variables**:
-   - Used **Postman Environments** to manage variables like `url` and `token`.
+   - Used **Postman Environments** to manage variables like `url`.
 
 3. **Reports**:
    - Generated **HTML reports** using **htmlextra** for better visualization of test results.
@@ -48,12 +48,12 @@ npm install -g newman newman-reporter-htmlextra
 ### **3. Run the Collection**
 Run the Postman collection using Newman:
 ```bash
-newman run postman-api-testing-demo/postman_api_testing_demo.json -e postman-api-testing-demo/postman_api_testing_env.json
+newman run postman_api_testing_demo.json -e postman_api_testing_env.json
 ```
 ### **4. Create HTML Report**
 Run the Postman collection using Newman:
 ```bash
-newman run postman-api-testing-demo/postman_api_testing_demo.json -e postman-api-testing-demo/postman_api_testing_env.json -r htmlextra
+newman run postman_api_testing_demo.json -e postman_api_testing_env.json -r htmlextra
 ```
 
 ### **5. View the Report**
